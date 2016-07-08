@@ -1,13 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css" media="screen" />
-    <title>etsy-search-page</title>
-  </head>
-  <body>
-    <script src="app.js" type="text/javascript">
 
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css" media="screen" />
+    <link rel="stylesheet" href="styles/main.css" media="screen" />
+    <title>etsy-search-page</title>
+</head>
+
+<body>
+    <header>
+        <div class="icon">Etsy</div>
+        <input type="text" name="name" value="">
+        <button type="button" name="button">Search</button>
+        <nav class="topNav">
+            <ul>
+                <li><a href="#">Sell on Etsy</a></li>
+                <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
+                <li><i class="fa fa-heart" aria-hidden="true"></i> Favorites
+                </li>
+                <li><i class="fa fa-bomb" aria-hidden="true"></i> You
+                </li>
+                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                </li>
+            </ul>
+
+        </nav>
+        <nav class="subNav">
+
+            <ul>
+                <li>Clothing & Accessories</li>
+                <li>Jewelry</li>
+                <li>Craft Supplies & Tools</li>
+                <li>Weddings</li>
+                <li>Entertainment</li>
+                <li>Home & Living</li>
+                <li>Kids & Baby</li>
+                <li>Vintage</li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <p class="strong">Show results for:</p>
+
+    <nav class="sideNav">
+        <ul>All Categories:
+            <li>Home & Living</li>
+            <li>Art & Collectibles</li>
+            <li>Weddings</li>
+            <li>Clothing</li>
+            <li>Paper & Party Supplies</li>
+            <li>Jewelry</li>
+            <li>Accessories</li>
+            <li>Craft Supplies & Tools</li>
+            <li>Bags & Purses</li>
+            <li>Bath & Beauty</li>
+            <li>Books, Movies & Music</li>
+            <li>Shoes</li>
+            <li>Electronics & Accessories</li>
+            <li>Toys & Games</li>
+            <li>Pet Supplies</li>
+        </ul>
+    </nav>
+
+    <div class="whiskeyContainer">
+        <div class="whiskeyItem">
+            <a href="#">
+
+                <img src="#" alt="" />
+                <div class="title">
+                </div>
+                <div class="shopName">
+
+                </div>
+                <div class="price">
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <p class="strong">Refine your search:</p>
+        <form class="refineSearch" action="">
+            <input type="radio" name="refine" value="allItems"> All Items
+            <input type="radio" name="refine" value="handmade"> Handmade
+            <input type="radio" name="refine" value="other"> Other
+            <p class="strong">Price($)</p>
+            <div class="priceContainer">
+              <input type="text" placeholder="Low" name="name" value="">
+              <div>to</div>
+              <input type="text" placeholder="High" name="name" value="">
+              <button type="button" name="button"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+</button>
+
+              </div>
+
+        </form>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript">
     </script>
-  </body>
+</body>
+
 </html>
